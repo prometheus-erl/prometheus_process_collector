@@ -1,24 +1,23 @@
-{application, prometheus_process_collector,
- [{description, "Prometheus.io process collector
-    Collector exports the current state of process metrics including cpu, memory,
-    file descriptor usage and native threads count as well as the process start and up times."},
-  {vsn, "1.6.0"},
-  {registered, []},
-  {applications,
-   [kernel,
-    stdlib
-   ]},
-  {env,[]},
-  {modules, []},
-
-  {licenses, ["MIT"]},
-  {links, [{"Github", "https://github.com/deadtrickster/prometheus_process_collector.erl"},
-           {"Hex.pm", "https://hex.pm/packages/prometheus_process_collector"},
-           {"Prometheus.io Client", "https://github.com/deadtrickster/prometheus.erl"},
-           {"Prometheus.ex", "https://hex.pm/packages/prometheus_ex"},
-           {"Inets HTTPD Exporter", "https://hex.pm/packages/prometheus_httpd"},
-           {"Ecto Instrumenter", "https://hex.pm/packages/prometheus_ecto"},
-           {"Phoenix Instrumenter", "https://hex.pm/packages/prometheus_phoenix"},
-           {"Plugs Instrumenter/Exporter", "https://hex.pm/packages/prometheus_plugs"},
-           {"Process info Collector", "https://hex.pm/packages/prometheus_process_collector"}]}
- ]}.
+{application, prometheus_process_collector, [
+    {description,
+        "Prometheus.io process collector\n"
+        "    Collector exports the current state of process metrics including cpu, memory,\n"
+        "    file descriptor usage and native threads count as well as the process start and up times."},
+    {vsn, git},
+    {registered, []},
+    {applications, [kernel, stdlib, prometheus]},
+    {env, []},
+    {modules, []},
+    {licenses, ["MIT"]},
+    {links, [
+        {"Github", "https://github.com/prometheus-erl/prometheus_process_collector"},
+        {"Hex.pm", "https://hex.pm/packages/prometheus_process_collector"},
+        {"Prometheus.io Client", "https://github.com/prometheus-erl/prometheus.erl"},
+        {"Prometheus.ex", "https://hex.pm/packages/prometheus_ex"},
+        {"Inets HTTPD Exporter", "https://hex.pm/packages/prometheus_httpd"},
+        {"Ecto Instrumenter", "https://hex.pm/packages/prometheus_ecto"},
+        {"Phoenix Instrumenter", "https://hex.pm/packages/prometheus_phoenix"},
+        {"Plugs Instrumenter/Exporter", "https://hex.pm/packages/prometheus_plugs"},
+        {"Process info Collector", "https://hex.pm/packages/prometheus_process_collector"}
+    ]}
+]}.

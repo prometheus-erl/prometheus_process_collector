@@ -2,6 +2,9 @@
 _*
 .eunit
 *.o
+*.d
+*.gcda
+*.gcno
 *.so
 *.beam
 *.plt
@@ -17,3 +20,5 @@ _build
 deps
 __checkouts
 _checkouts
+priv
+doc

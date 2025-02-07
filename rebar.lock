@@ -1,6 +1,11 @@
-{"1.1.0",
-[{<<"prometheus">>,{pkg,<<"prometheus">>,<<"4.2.2">>},0}]}.
+{"1.2.0",
+[{<<"prometheus">>,{pkg,<<"prometheus">>,<<"4.12.0">>},0},
+ {<<"quantile_estimator">>,{pkg,<<"quantile_estimator">>,<<"1.0.1">>},1}]}.
 [
 {pkg_hash,[
- {<<"prometheus">>, <<"A830E77B79DC6D28183F4DB050A7CAC926A6C58F1872F9EF94A35CD989ACEEF8">>}]}
+ {<<"prometheus">>, <<"5CCA20A8935A8DFE21AE43AD133CE356DC45812D6464A46E991C5922E4119197">>},
+ {<<"quantile_estimator">>, <<"6CED14FBACCF5BC4C9F79EB28468A1D2BABD4B53EC978AD458CBD17B556C6C22">>}]},
+{pkg_hash_ext,[
+ {<<"prometheus">>, <<"352E6C32CEB0C2A2407CC5756ABF2AEAEC36D1E976AC7608423C8B61FAB5707D">>},
+ {<<"quantile_estimator">>, <<"401C4ADACE179F1A709CD269207324535B00888C87F980B0F794F79DEB3767D8">>}]}
 ].

@@ -1,7 +1,11 @@
 # Prometheus.io Process Collector
-[![Hex.pm](https://img.shields.io/hexpm/v//prometheus_process_collector.svg?maxAge=2592000)](https://hex.pm/packages/prometheus_process_collector)
+[![Hex.pm](https://img.shields.io/hexpm/v/prometheus_process_collector.svg?maxAge=2592000?style=plastic)](https://hex.pm/packages/prometheus_process_collector)
 [![Hex.pm](https://img.shields.io/hexpm/dt/prometheus_process_collector.svg?maxAge=2592000)](https://hex.pm/packages/prometheus_process_collector)
-[![Build Status](https://travis-ci.org/deadtrickster/prometheus_process_collector.svg?branch=master)](https://travis-ci.org/deadtrickster/prometheus_process_collector)
+[![Hex
+Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/prometheus_process_collector/)
+[![GitHub Actions](https://github.com/prometheus-erl/prometheus_process_collector/actions/workflows/ci.yml/badge.svg)](https://github.com/prometheus-erl/prometheus_process_collector/actions/workflows/ci.yml)
+[![Codecov](https://codecov.io/github/prometheus-erl/prometheus_process_collector/graph/badge.svg?token=G9HB5UKNIY)](https://codecov.io/github/prometheus-erl/prometheus_process_collector)
+
 
 Collector which exports the current state of process metrics including cpu, memory, file descriptor usage and native threads count as well as the process start and up times.
 
@@ -79,7 +83,6 @@ process_voluntary_context_switches_total 1131
 # TYPE process_involuntary_context_switches_total counter
 # HELP process_involuntary_context_switches_total Number of times a context switch resulted due to a higher priority process becoming runnable or because the current process exceeded its time slice.
 process_involuntary_context_switches_total 208
-
 ```
 
 Usage
@@ -87,23 +90,18 @@ Usage
 
 You can register this collector manually using `prometheus_process_collector/0,1` or use `default_collectors` env entry for `prometheus`.
 
-With [Prometheus Plugs](https://github.com/deadtrickster/prometheus-plugs) - just add prometheus_process_collector dependency to top-level project (i.e. [like here](https://github.com/deadtrickster/prometheus-plugs-example/edit/master/mix.exs)).
+With [Prometheus Plugs](https://github.com/prometheus-erl/prometheus-plugs) - just add prometheus_process_collector dependency to top-level project (i.e. [like here](https://github.com/prometheus-erl/prometheus-plugs-example/edit/master/mix.exs)).
 
 ## Integrations / Collectors / Instrumenters
- - [Ecto collector](https://github.com/deadtrickster/prometheus-ecto)
- - [Plugs Instrumenter/Exporter](https://github.com/deadtrickster/prometheus-plugs)
+ - [Ecto collector](https://github.com/prometheus-erl/prometheus-ecto)
+ - [Plugs Instrumenter/Exporter](https://github.com/prometheus-erl/prometheus-plugs)
  - [Elli middleware](https://github.com/elli-lib/elli_prometheus)
  - [Fuse plugin](https://github.com/jlouis/fuse#fuse_stats_prometheus)
- - [Phoenix instrumenter](https://github.com/deadtrickster/prometheus-phoenix)
- - [Process Info Collector](https://github.com/deadtrickster/prometheus_process_collector.erl)
- - [Prometheus.erl](https://github.com/deadtrickster/prometheus.erl)
- - [Prometheus.ex](https://github.com/deadtrickster/prometheus.ex)
- - [RabbitMQ Exporter](https://github.com/deadtrickster/prometheus_rabbitmq_exporter)
-
-Build
------
-
-    $ rebar3 compile
+ - [Phoenix instrumenter](https://github.com/prometheus-erl/prometheus-phoenix)
+ - [Process Info Collector](https://github.com/prometheus-erl/prometheus_process_collector)
+ - [Prometheus.erl](https://github.com/prometheus-erl/prometheus.erl)
+ - [Prometheus.ex](https://github.com/prometheus-erl/prometheus.ex)
+ - [RabbitMQ Exporter](https://github.com/prometheus-erl/prometheus_rabbitmq_exporter)
 
 License
 -----
